@@ -1,0 +1,25 @@
+<%- include('_layout/header') -%>
+
+<main>
+	<aside>
+			<nav id="nav_menu_1">
+				<ul>
+									
+					<li><a href="/login">Admin</a></li>
+					<li><a href="/add">Add Page</a></li>
+					<li><a href="#">Category</a></li>
+					<li><a href="/logout">Log out</a></li>
+				</ul>
+			</nav>
+			   
+	</aside>
+	<section>
+        <h1><%= pages.title %></h1>
+       
+		<img src="../images/<%= pages.image%>" alt="<%= pages.image %>" width="150">
+    	<p> <%- pages.content %></p>
+    
+			
+	</section>
+  </main>
+  <%- include('_layout/footer') -%>

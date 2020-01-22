@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form method="POST" action="/admin/login">
+                <div class="form-field">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-input" name="username" >
+                </div>
+                <div class="form-field">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-input" name="password" >
+                </div>
+                <div class="form-field">
+                    <input type="submit" class="form-submit" value="Login">
+                </div>
+            </form>
+            <div class="error">
+                    <% 
+                    if(typeof errors !== 'undefined'){
+                        for(var error of errors){
+                            %>
+                            <h3><%= error.msg %></h3>
+                            <%
+                        }
+                    }
+                %>  
+            </div>
+           
+            
+        </section>
+    </main>
+</body>
+</html>

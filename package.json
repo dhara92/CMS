@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dhara Narola",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "connect-flash": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-fileupload": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "^6.3.1",
+    "fs-extra": "*",
+    "mongoose": "^5.8.7"
+  }
+}

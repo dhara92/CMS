@@ -1,0 +1,155 @@
+html{
+	background: rgb(62,238,222);
+background: linear-gradient(90deg, rgba(62,238,222,1) 0%, rgba(130,200,182,1) 19%, rgba(101,227,190,0.6783088235294117) 35%, rgba(0,212,255,1) 100%);
+}
+body{
+	max-width: 850px;
+	color: seagreen;
+    margin: 70px 0 0 260px;
+    box-shadow: 0 0 10px gray;
+	padding: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-size: cover;
+    background-attachment: fixed;
+}
+body h2{
+	color: maroon;
+	margin: 10;
+	font-size: 1em;
+}
+
+.menu{
+	list-style-type: none;
+	text-align: center;
+	height: 40px;
+	padding: 0px;
+	display: block;
+
+	border-radius: 10px;
+	background: #AFF7F6;
+}
+.menu li{
+	display:  inline-block;
+	padding-top: 5px ;
+    width: 150px;
+}
+/* nav{
+	border: 2px solid #db0066;
+} */
+.menu li a{
+	color: #581845;
+	font-weight: bold;
+	text-decoration: none;
+    font-size: 22px;
+}
+.menu li a:hover{
+	color: blue;
+	background: gray;
+}
+.border-right{
+  
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+form .form-field label {
+	width: 40%;
+	float: left;
+	color: maroon;
+	font-size: 18px;
+	font-weight: bold;
+    padding-top: 0.5em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	
+}
+
+.form-field {
+	clear: both;
+}
+
+form .form-field .form-input {
+	float: left;
+	width: 56%;
+	height: 35px;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form {
+	width: 40em;
+	height: 22em;
+	margin: 20px auto 40px;
+	border-radius: 30px;
+	box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: plum;
+}
+.form-submit {
+	margin: 0;
+	
+}
+.form-submit {
+	border: 2px solid gray;
+	width: 200px;
+	height: 40px;
+	font-size: 18px;
+	position: inherit;
+	margin: 30px auto;
+	display: block;
+	border-radius: 20px;
+	float: right;
+	font-weight: bold;
+	color: maroon;
+	
+}
+.form-submit:hover{
+	background: blanchedalmond;
+	color: black;
+	border-color: white;
+}
+#page{
+    padding-left: 6em;
+}
+section.list{
+    width: 50em;
+    margin: 20px auto 40px;
+    padding-left: 8em;
+}
+table{
+	background: #FFBE96;
+}
+.error{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	font-size: 1em; 
+	color: red;
+}
+table.contact-list{
+    width: 30em;
+	
+    margin-bottom: 20px;
+    text-align: center;
+}
+table.contact-list td, table.contact-list th{
+	
+	padding: 5px 10px;
+}
+table.contact-list td a{
+	color: #042015;
+	font-weight: bold;
+	text-decoration: none;
+}
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{
+    width: 22.6em;
+    height: 5em;
+    float: right;
+} 
+footer{
+    padding-left: 25em;
+}
+footer a{
+    font-weight: bold;
+	text-decoration: none;
+    font-size: 20px;
+}

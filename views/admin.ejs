@@ -1,0 +1,19 @@
+<%- include('layouts/admin_header') -%>
+    <main>
+        <section class="list">
+            
+            <table class="contact-list">
+               
+                <% pages.forEach(function(page){
+                    %>
+    <tr>
+        <td><%= page.title %></td>
+        <td><a href="/edit_page/<%= page._id %>">Edit</a></td>
+        <td><a href="/delete_page/<%= page._id %>">Delete</a></td>
+    </tr>
+                    <%
+                }); %>
+                
+            </table>
+        </section>
+    </main>

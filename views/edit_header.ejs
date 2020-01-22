@@ -1,0 +1,32 @@
+<%- include('layouts/admin_header') -%>
+    <main>
+        <section>
+            <div id="page">
+                
+            </div>
+            <form method="POST" action="/edit_header/<%= header.id %>" enctype="multipart/form-data">
+                <div class="form-field">
+                    <label for="tag">Tag Line:</label>
+                    <input type="text" class="form-input" name="tag" value="<%= header.tag %>">
+                </div>
+                <div class="form-field">
+                    <label for="myimage">Logo:</label>
+                    <input type="file" class="form-input" name="myimage" id="myimage">
+                </div>
+                <div class="form-field">
+                    <input type="submit" class="form-submit" value="Edit">
+                </div>
+            </form>
+            <div class="error">
+                    <% 
+                    if(typeof errors !== 'undefined'){
+                        for(var error of errors){
+                            %>
+                            <h3><%= error.msg %></h3>
+                            <%
+                        }
+                    }
+                %>
+            </div>
+        </section>
+    </main>

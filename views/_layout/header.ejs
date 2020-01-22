@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Node CMS</title>
+	<link rel="shortcut icon" type="image/png" href="public/images/nodeIcon.jpg"/>
+	
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  <header>
+  	<img src="../images/<%= header.image %>" alt="<%= header.image %>"  >
+    <h2><%= header.tag %></h2>
+	<h3>It's all about CMS!</h3>
+  </header>
+  <nav id="nav_menu_2">
+	<ul>
+      <li><a href="/" >Home</a></li>
+    <li><a href="#">Pages</a>
+	   <ul>
+		<% page.forEach(function(page){
+			%>
+			<li>
+				<a href="/single/<%= page.slug %>"><%= page.slug %></a>
+			</li>
+			<%
+    }); %>
+  </ul> </li>
+	  <li><a href="/about" >About</a></li>
+	  <li><a href="/team">Team</a></li>
+	  <li><a href="/logout">Logout</a></li> 
+	</ul>
+  </nav>
